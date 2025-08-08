@@ -4,6 +4,8 @@ const fs = require('fs');
 let router = express.Router();
 const pino = require("pino");
 const { default: makeWASocket, useMultiFileAuthState, delay, Browsers, makeCacheableSignalKeyStore, getAggregateVotesInPollMessage, DisconnectReason, WA_DEFAULT_EPHEMERAL, jidNormalizedUser, proto, getDevice, generateWAMessageFromContent, fetchLatestBaileysVersion, makeInMemoryStore, getContentType, generateForwardMessageContent, downloadContentFromMessage, jidDecode } = require('@whiskeysockets/baileys')
+const hukanna = "```";
+const pakaya = "`";
 
 const { upload } = require('./mega');
 function removeFile(FilePath) {
@@ -77,13 +79,13 @@ var randomItem = selectRandomItem(items);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
                         let md = "THARUSHA-MD=" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
-                        let desc = `*👋𝐓𝐇𝐀𝐑𝐔𝐒𝐇𝐀-𝐌𝐃 𝐬𝐞𝐬𝐬𝐢𝐨𝐧 𝐜𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝...*\n\n*🅳🅾🅽'🆃 🆂🅷🅰🆁🅴 🆃🅷🅸🆂 🅲🅾🅳🅴 🆆🅸🆃🅷 🅰🅽🆈🅾🅽🅴!*\n\n*ꜱʀɪ ʟᴀɴᴋᴀɴ ʙᴇꜱᴛ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ - ᴍʀ.ᴛʜᴀʀᴜꜱʜᴀ ꜱᴀɴᴅɪᴘᴀ.*\n\n🔰 *🅹🅾🅸🅽 -*https://whatsapp.com/channel/0029Vb9LTRHInlqISdCfln45\n\n🔰 *🅶🅸🆃🅷🆄🅱 🆁🅴🅿🅾 -*https://github.com/Tharushaaaaa777/THARUSHA-XMD\n\n> *𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝚃𝙷𝙰𝚁𝚄𝚂𝙷𝙰 〽️𝙳*`; 
+                        let desc = `👋 *Hellow there ${pakaya}RUSH-MD${pakaya} session_id successfully connected* ✅\n\n*🤝 ${pakaya}𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂${pakaya} 👇*\n${pakaya}𝙲𝙷𝙰𝙽𝙽𝙴𝙻${pakaya} 1️⃣: ${hukanna}https://whatsapp.com/channel/0029VbBCYjHJkK73JeM0co3k${hukanna}\n\n${pakaya}𝙲𝙷𝙰𝙽𝙽𝙴𝙻${pakaya} 2️⃣: ${hukanna}https://whatsapp.com/channel/0029Vb9LTRHInlqISdCfln45${hukanna}\n\n${pakaya}𝙲𝙷𝙰𝙽𝙽𝙴𝙻${pakaya} 3️⃣: ${hukanna}https://whatsapp.com/channel/0029VbAWJOYBadmRcFC1991j${hukanna}\n\n> *© ᴘᴏᴡᴇʀᴅ ʙʏ ʀᴜꜱʜ-ᴍᴅ ᴏꜰᴄ*`; 
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "ᴛʜᴀʀᴜꜱʜᴀ-ᴍᴅ",
-thumbnailUrl: "https://i.ibb.co/5gQ13m8p/0ef38c1555c87f01.jpg",
+title: "𝚁𝚄𝚂𝙷-𝙼𝙳 <\>",
+thumbnailUrl: "https://i.ibb.co/qYKWQZ6F/b-QXj-QSJIPM.jpg",
 sourceUrl: "https://whatsapp.com/channel/0029Vb9LTRHInlqISdCfln45",
 mediaType: 1,
 renderLargerThumbnail: true
@@ -93,13 +95,13 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `*👋𝐓𝐇𝐀𝐑𝐔𝐒𝐇𝐀-𝐌𝐃 𝐬𝐞𝐬𝐬𝐢𝐨𝐧 𝐜𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝...*\n\n*🅳🅾🅽'🆃 🆂🅷🅰🆁🅴 🆃🅷🅸🆂 🅲🅾🅳🅴 🆆🅸🆃🅷 🅰🅽🆈🅾🅽🅴!*\n\n*ꜱʀɪ ʟᴀɴᴋᴀɴ ʙᴇꜱᴛ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ - ᴍʀ.ᴛʜᴀʀᴜꜱʜᴀ ꜱᴀɴᴅɪᴘᴀ.*\n\n🔰 *🅹🅾🅸🅽 -*https://whatsapp.com/channel/0029Vb9LTRHInlqISdCfln45\n\n🔰 *🅶🅸🆃🅷🆄🅱 🆁🅴🅿🅾 -*https://github.com/Tharushaaaaa777/THARUSHA-XMD\n\n> *𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝚃𝙷𝙰𝚁𝚄𝚂𝙷𝙰 〽️𝙳*`;
+                            let desc = `👋 *Hellow there ${pakaya}RUSH-MD${pakaya} session_id successfully connected* ✅\n\n*🤝 ${pakaya}𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂${pakaya} 👇*\n${pakaya}𝙲𝙷𝙰𝙽𝙽𝙴𝙻${pakaya} 1️⃣: ${hukanna}https://whatsapp.com/channel/0029VbBCYjHJkK73JeM0co3k${hukanna}\n\n${pakaya}𝙲𝙷𝙰𝙽𝙽𝙴𝙻${pakaya} 2️⃣: ${hukanna}https://whatsapp.com/channel/0029Vb9LTRHInlqISdCfln45${hukanna}\n\n${pakaya}𝙲𝙷𝙰𝙽𝙽𝙴𝙻${pakaya} 3️⃣: ${hukanna}https://whatsapp.com/channel/0029VbAWJOYBadmRcFC1991j${hukanna}\n\n> *© ᴘᴏᴡᴇʀᴅ ʙʏ ʀᴜꜱʜ-ᴍᴅ ᴏꜰᴄ*`;
                             await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "ᴛʜᴀʀᴜꜱʜᴀ-ᴍᴅ",
-thumbnailUrl: "https://i.ibb.co/5gQ13m8p/0ef38c1555c87f01.jpg",
+title: "𝚁𝚄𝚂𝙷-𝙼𝙳 <\>",
+thumbnailUrl: "https://i.ibb.co/qYKWQZ6F/b-QXj-QSJIPM.jpg",
 sourceUrl: "https://whatsapp.com/channel/0029Vb9LTRHInlqISdCfln45",
 mediaType: 2,
 renderLargerThumbnail: true,
