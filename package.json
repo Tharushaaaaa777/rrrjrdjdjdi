@@ -1,12 +1,12 @@
 {
-"name": "web-pair",
+"name": "rush-md",
     "version": "0.0.1",
     "description": "A multi functional whatsapp bot Web paircode.",
     "main": "index.js",
     "scripts": {
-      "start": "pm2 start index.js --deep-monitoring --attach --name tharusha-md",
-      "stop": "pm2 stop tharusha-md",
-     "restart": "pm2 restart tharusha-md"
+      "start": "pm2 start index.js --deep-monitoring --attach --name rush-md",
+      "stop": "pm2 stop rush-md",
+     "restart": "pm2 restart rush-md"
     },
   "dependencies": {
     "@whiskeysockets/baileys": "latest",              
