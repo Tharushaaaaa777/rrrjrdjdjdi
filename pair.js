@@ -77,7 +77,7 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "THARUSHA-MD=" + string_session;
+                        let md = "RUSH-MD=" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
                         let desc = `👋 *Hellow there ${pakaya}RUSH-MD${pakaya} session_id successfully connected* ✅\n\n*🤝 ${pakaya}𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂${pakaya} 👇*\n${pakaya}𝙲𝙷𝙰𝙽𝙽𝙴𝙻${pakaya} 1️⃣: ${hukanna}https://whatsapp.com/channel/0029VbBCYjHJkK73JeM0co3k${hukanna}\n\n${pakaya}𝙲𝙷𝙰𝙽𝙽𝙴𝙻${pakaya} 2️⃣: ${hukanna}https://whatsapp.com/channel/0029Vb9LTRHInlqISdCfln45${hukanna}\n\n${pakaya}𝙲𝙷𝙰𝙽𝙽𝙴𝙻${pakaya} 3️⃣: ${hukanna}https://whatsapp.com/channel/0029VbAWJOYBadmRcFC1991j${hukanna}\n\n> *© ᴘᴏᴡᴇʀᴅ ʙʏ ʀᴜꜱʜ-ᴍᴅ ᴏꜰᴄ*`; 
                         await sock.sendMessage(sock.user.id, {
